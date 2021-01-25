@@ -1,0 +1,224 @@
+body {
+  background-color: hsl(185, 75%, 39%);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  grid-auto-rows: 50vh;
+  grid-template-areas:
+  "round-bg profile profile ."
+  ". profile profile credit";
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  font-family: 'Kumbh Sans' , sans-serif;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    width: 100vw;
+    background-color: lime;
+  }
+
+@media only screen and (max-height : 375px) {
+  body {
+    background-color: pink;
+    height: 100vh;
+  }
+}
+
+
+  .profile-container {
+    align-self: center;
+    border-radius: 3%;
+    grid-area: profile;
+    height: 26rem;
+    justify-self: center;
+    overflow: hidden;
+    width: 175%;
+    position:relative;
+  }
+
+}
+
+.attribution {
+  align-self: end;
+  display: grid;
+  font-family: 'Pacifico', cursive;
+  font-size: 0.89rem;
+  grid-area: credit;
+  justify-content: end;
+  color: hsl(240, 100%, 24%, 0.5);
+  margin-bottom: 0.62rem;
+}
+
+.attribution a {
+  color: hsl(240, 100%, 24%, 0.86);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: #FFF;;
+}
+
+.boldName {
+  align-self: end;
+  grid-area: middle-n;
+  grid-row: span 1/2;
+  font-size: calc(0.5rem + 0.9vw);
+  font-weight: 700;
+  margin: 0;
+  color: hsl(229, 23%, 23%);
+  text-align: center;
+}
+
+.bottom-box {
+  text-align: center;
+  grid-area: bottom;
+  line-height: 1.6;
+  background-color: #FFF;
+  border-top: 1px solid hsl(0, 0%, 59%);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-areas: "Follow Like Photo";
+  color: black;
+}
+
+.container-box  {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 3.2fr 0.1fr 2fr;
+  grid-template-areas:
+    "top top top top"
+    "middle middle middle middle"
+    "bottom bottom bottom bottom";
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.Followers {
+  align-self: center;
+  color: hsl(0, 0%, 59%);
+  grid-area: Follow;
+  justify-self: center;
+  font-size: calc(0.3rem + 0.9vw);
+
+}
+
+.grey-color {
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+  margin-left: 0.4rem;
+}
+
+.likes {
+align-self: center;
+color: hsl(0, 0%, 59%);
+grid-area: Like;
+justify-self: center;
+font-size: calc(0.3rem + 0.9vw);
+}
+
+.location {
+  color: hsl(0, 0%, 59%);
+  grid-area: middle-l;
+  margin-top: 2px;
+}
+
+.middle-box {
+  align-content :center;
+  background-color: #FFF;
+  display: grid;
+  font-size: calc(0.9rem + 0.2vw);
+  grid-area: middle;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 0.1fr 0.1fr;
+  grid-template-areas:
+    "middle-p middle-p middle-p"
+    "middle-n middle-n middle-n"
+    "middle-l middle-l middle-l";
+  height: 13.2vw;
+  justify-items: center;
+  line-height: 1.6;
+}
+
+.pattern-top {
+  display:grid;
+  grid-column: 2;
+  grid-row: round-bg;
+  margin-top: 1vw;
+  overflow: overlay;
+  position: relative;
+  transform: translate(-73%, -53%);
+  z-index: -1;
+}
+
+.pattern-top img {
+  border-radius: 100%;
+  width: 100%;
+}
+
+.pattern-bottom {
+  display: grid;
+  grid-column: 3 / 7;
+  grid-row: credit / profile 3;
+  margin: 6% 0 auto 4%;
+  max-height: 129vh ;
+  max-width: 130vw;
+  position: relative;
+  transform: translate(-3%, -1%);
+  z-index: -1;
+}
+
+
+.photos {
+align-self: center;
+color: hsl(0, 0%, 59%);
+grid-area: Photo;
+justify-self: center;
+font-size: calc(0.3rem + 0.9vw);
+}
+
+.profile-container {
+  align-self: center;
+  border-radius: 3%;
+  grid-area: profile;
+  height: 35vw;
+  justify-self: center;
+  overflow: hidden;
+  width: 68%;
+  position:relative;
+  max-width: 375px;
+  min-width: 235px;
+}
+
+.profile-container::before {
+  content: "";
+  width: 1px;
+  margin-left: -1px;
+  float: left;
+  height: 0;
+  padding-top: 591.44px / 1127.34px * 100%;
+}
+
+.pro-vic {
+  border-radius: 50%;
+  border: solid 5px #FFF;
+  grid-area: middle-p;
+  height: 8.4vw;
+  transform: translate(0px, -5vw);
+  width: 8.3vw;
+}
+
+
+.top-box {
+  background-image: url(../images/bg-pattern-card.svg);
+  background-size: 100%;
+  grid-area: top;
+  height: 13.35vw;
+  min-height: 100%;
+  width: 100%;
+}
