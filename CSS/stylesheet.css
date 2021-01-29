@@ -13,32 +13,6 @@ body {
   font-family: 'Kumbh Sans' , sans-serif;
 }
 
-@media only screen and (max-width: 500px) {
-  body {
-    width: 100vw;
-    background-color: lime;
-  }
-
-@media only screen and (max-height : 375px) {
-  body {
-    background-color: pink;
-    height: 100vh;
-  }
-}
-
-
-  .profile-container {
-    align-self: center;
-    border-radius: 3%;
-    grid-area: profile;
-    height: 26rem;
-    justify-self: center;
-    overflow: hidden;
-    width: 175%;
-    position:relative;
-  }
-
-}
 
 .attribution {
   align-self: end;
@@ -147,12 +121,11 @@ font-size: calc(0.3rem + 0.9vw);
 
 .pattern-top {
   display:grid;
-  grid-column: 2;
-  grid-row: round-bg;
-  margin-top: 1vw;
-  overflow: overlay;
+  grid-column: 5/-3;
+  grid-row:1/1;
   position: relative;
-  transform: translate(-73%, -53%);
+  transform: translate(-104%, -45%);
+  max-height: calc(992.44/ 927.34 * 200%);
   z-index: -1;
 }
 
@@ -163,7 +136,7 @@ font-size: calc(0.3rem + 0.9vw);
 
 .pattern-bottom {
   display: grid;
-  grid-column: 3 / 7;
+  grid-column: 3 / 5;
   grid-row: credit / profile 3;
   margin: 6% 0 auto 4%;
   max-height: 129vh ;
@@ -182,6 +155,7 @@ justify-self: center;
 font-size: calc(0.3rem + 0.9vw);
 }
 
+
 .profile-container {
   align-self: center;
   border-radius: 3%;
@@ -189,19 +163,8 @@ font-size: calc(0.3rem + 0.9vw);
   height: 35vw;
   justify-self: center;
   overflow: hidden;
-  width: 68%;
+  width: calc(10em + 40%);
   position:relative;
-  max-width: 375px;
-  min-width: 235px;
-}
-
-.profile-container::before {
-  content: "";
-  width: 1px;
-  margin-left: -1px;
-  float: left;
-  height: 0;
-  padding-top: 591.44px / 1127.34px * 100%;
 }
 
 .pro-vic {
@@ -209,7 +172,7 @@ font-size: calc(0.3rem + 0.9vw);
   border: solid 5px #FFF;
   grid-area: middle-p;
   height: 8.4vw;
-  transform: translate(0px, -5vw);
+  transform: translate(0px, -4.6vw);
   width: 8.3vw;
 }
 
