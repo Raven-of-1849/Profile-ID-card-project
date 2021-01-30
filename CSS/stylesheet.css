@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  max-width: 1440px;
+  max-height: 30vw;
 }
 .profileBody {
   background-color: hsl(185, 75%, 39%);
@@ -122,14 +124,13 @@ font-size: calc(0.3rem + 0.9vw);
 }
 
 .pattern-top {
-  grid-column: 3 / 5;
-      grid-row: credit / profile 3;
-      margin: 6% 0 auto 4%;
-      max-height: 129vh;
-      max-width: 130vw;
-      position: relative;
-      transform: translate(-116%, -92%);
-      z-index: 0 ;
+  display:grid;
+  grid-column: 5/-3;
+  grid-row:1/1;
+  position: relative;
+  transform: translate(-104%, -45%);
+  max-height: calc(992.44/ 927.34 * 200%);
+  z-index: 0;
 }
 
 .pattern-top img {
@@ -222,6 +223,17 @@ font-size: calc(0.3rem + 0.9vw);
   .middle-box {
     height: 39.2vw;
     line-height: 2.5;
+  }
+
+  .pattern-top {
+    grid-column: 3 / 5;
+        grid-row: credit / profile 3;
+        margin: 6% 0 auto 4%;
+        max-height: 129vh;
+        max-width: 130vw;
+        position: relative;
+        transform: translate(-116%, -92%);
+        z-index: 0 ;
   }
 
 .pro-vic {
