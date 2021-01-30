@@ -185,9 +185,9 @@ font-size: calc(0.3rem + 0.9vw);
   width: 100%;
 }
 
-@media only screen and (max-device-width: 400px) {
+@media only screen and (max-device-width: 1440px) {
   body {
-    background-color: green;
+    background-color: navy;
   }
 
   .boldName {
