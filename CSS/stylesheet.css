@@ -1,4 +1,7 @@
 body {
+  margin: 0;
+}
+.profileBody {
   background-color: hsl(185, 75%, 39%);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -119,13 +122,14 @@ font-size: calc(0.3rem + 0.9vw);
 }
 
 .pattern-top {
-  display:grid;
-  grid-column: 5/-3;
-  grid-row:1/1;
-  position: relative;
-  transform: translate(-104%, -45%);
-  max-height: calc(992.44/ 927.34 * 200%);
-  z-index: -1;
+  grid-column: 3 / 5;
+      grid-row: credit / profile 3;
+      margin: 6% 0 auto 4%;
+      max-height: 129vh;
+      max-width: 130vw;
+      position: relative;
+      transform: translate(-116%, -92%);
+      z-index: 0 ;
 }
 
 .pattern-top img {
@@ -142,7 +146,7 @@ font-size: calc(0.3rem + 0.9vw);
   max-width: 130vw;
   position: relative;
   transform: translate(-3%, -1%);
-  z-index: -1;
+  z-index: 0;
 }
 
 
@@ -164,6 +168,7 @@ font-size: calc(0.3rem + 0.9vw);
   overflow: hidden;
   width: calc(10em + 40%);
   position:relative;
+  z-index: 1;
 }
 
 .pro-vic {
@@ -188,6 +193,7 @@ font-size: calc(0.3rem + 0.9vw);
 @media only screen and (max-device-width: 425px) {
   body {
     background-color: gold;
+    overflow:hidden;
   }
 
   .boldName {
