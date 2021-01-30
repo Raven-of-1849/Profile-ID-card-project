@@ -185,7 +185,7 @@ font-size: calc(0.3rem + 0.9vw);
   width: 100%;
 }
 
-@media only screen and (max-device-width: 375px) {
+@media only screen and (max-device-width: 405px) {
   body {
     background-color: gold;
   }
