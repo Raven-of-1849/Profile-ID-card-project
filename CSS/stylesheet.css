@@ -13,7 +13,6 @@ body {
   font-family: 'Kumbh Sans' , sans-serif;
 }
 
-
 .attribution {
   align-self: end;
   display: grid;
@@ -184,4 +183,51 @@ font-size: calc(0.3rem + 0.9vw);
   height: 13.35vw;
   min-height: 100%;
   width: 100%;
+}
+
+@media only screen and (max-device-width: 375px) {
+  body {
+    background-color: green;
+  }
+
+  .boldName {
+    font-size: calc(98% + 0.7vw);
+    letter-spacing: 0.8px;
+    text-shadow: 0 0 black;
+  }
+
+  .location {
+    margin-top: -12px;
+  font-size: calc(81% + 0.5vw);
+  }
+
+  .profile-container {
+    height: 100vw;
+    margin:0;
+    padding: 0;
+    width: calc(149% + 3rem);
+  }
+
+  .top-box {
+    height: 37.35vw;
+    min-height: ;
+  }
+
+  .middle-box {
+    height: 39.2vw;
+    line-height: 2.5;
+  }
+
+.pro-vic {
+  height: 24vw;
+  transform: translate(0px, -14.6vw);
+  width: 25vw;
+}
+
+.Followers , .likes , .photos {
+  font-weight: lighter;
+  font-size: calc(0.4rem + 1.2vw);
+  letter-spacing: 0.6px;
+}
+
 }
