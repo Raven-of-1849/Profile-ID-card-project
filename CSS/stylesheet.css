@@ -164,7 +164,8 @@ font-size: calc(0.3rem + 0.9vw);
   align-self: center;
   border-radius: 3%;
   grid-area: profile;
-  height: 35vw;
+  /*height: 35vw; not very reponsive when zooming in on computer*/
+  height: calc(1.2rem + 33vw);
   justify-self: center;
   overflow: hidden;
   width: calc(10em + 40%);
@@ -193,7 +194,6 @@ font-size: calc(0.3rem + 0.9vw);
 
 @media only screen and (max-device-width: 425px) {
   body {
-    background-color: gold;
     overflow:hidden;
   }
 
