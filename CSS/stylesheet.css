@@ -153,10 +153,10 @@ body {
   border-radius: 3%;
   grid-area: profile;
   /*height: 35vw; not very reponsive when zooming in on computer*/
-  height: calc(1.2rem + 33vw);
+  height: calc(1.2rem + 32vw);
   justify-self: center;
   overflow: hidden;
-  width: calc(10em + 40%);
+  width: calc(8em + 39%);
   position: relative;
   z-index: 1;
 }
@@ -174,7 +174,7 @@ body {
   background-image: url(../images/bg-pattern-card.svg);
   background-size: 100%;
   grid-area: top;
-  height: 13.35vw;
+  /*height: 13.35vw;*/
   min-height: 100%;
 }
 
