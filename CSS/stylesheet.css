@@ -1,30 +1,15 @@
 body {
   margin: 0;
 }
-.profileBody {
-  background-color: hsl(185, 75%, 39%);
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  grid-auto-rows: 50vh;
-  grid-template-areas:
-  "round-bg profile profile ."
-  ". profile profile credit";
-  height: 100vh;
-  margin: 0 auto;
-  overflow: hidden;
-  font-family: 'Kumbh Sans' , sans-serif;
-}
 
 .attribution {
   align-self: end;
   color: hsla(240, 100%, 24%, 0.5);
-  font-family: 'Pacifico' , cursive;
+  font-family: 'Pacifico', cursive;
   font-size: calc(0.5rem + 0.9vw);
   grid-area: 2 / 1 / 2 / 5;
   justify-self: end;
   margin-right: 3%;
-  margin-bottom: 2em;
 }
 
 .attribution a {
@@ -33,7 +18,7 @@ body {
 }
 
 .attribution a:hover {
-  color: #FFF;;
+  color: #FFF;
 }
 
 .boldName {
@@ -62,7 +47,7 @@ body {
   color: black;
 }
 
-.container-box  {
+.container-box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 3.2fr 0.1fr 2fr;
@@ -81,7 +66,6 @@ body {
   grid-area: Follow;
   justify-self: center;
   font-size: calc(0.3rem + 0.9vw);
-
 }
 
 .grey-color {
@@ -91,11 +75,11 @@ body {
 }
 
 .likes {
-align-self: center;
-color: hsl(0, 0%, 59%);
-grid-area: Like;
-justify-self: center;
-font-size: calc(0.3rem + 0.9vw);
+  align-self: center;
+  color: hsl(0, 0%, 59%);
+  grid-area: Like;
+  justify-self: center;
+  font-size: calc(0.3rem + 0.9vw);
 }
 
 .location {
@@ -105,7 +89,7 @@ font-size: calc(0.3rem + 0.9vw);
 }
 
 .middle-box {
-  align-content :center;
+  align-content: center;
   background-color: #FFF;
   display: grid;
   font-size: calc(0.9rem + 0.2vw);
@@ -122,9 +106,9 @@ font-size: calc(0.3rem + 0.9vw);
 }
 
 .pattern-top {
-  display:grid;
+  display: grid;
   grid-column: 5/-3;
-  grid-row:1/1;
+  grid-row: 1/1;
   position: relative;
   transform: translate(-104%, -45%);
   max-height: calc(992.44/ 927.34 * 200%);
@@ -141,22 +125,35 @@ font-size: calc(0.3rem + 0.9vw);
   grid-column: 3 / 5;
   grid-row: credit / profile 3;
   margin: 6% 0 auto 4%;
-  max-height: 129vh ;
+  max-height: 129vh;
   max-width: 130vw;
   position: relative;
   transform: translate(-3%, -1%);
   z-index: 0;
 }
 
-
 .photos {
-align-self: center;
-color: hsl(0, 0%, 59%);
-grid-area: Photo;
-justify-self: center;
-font-size: calc(0.3rem + 0.9vw);
+  align-self: center;
+  color: hsl(0, 0%, 59%);
+  grid-area: Photo;
+  justify-self: center;
+  font-size: calc(0.3rem + 0.9vw);
 }
 
+.profileBody {
+  background-color: hsl(185, 75%, 39%);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  grid-auto-rows: 50vh;
+  grid-template-areas:
+    "round-bg profile profile ."
+    ". profile profile credit";
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  font-family: 'Kumbh Sans', sans-serif;
+}
 
 .profile-container {
   align-self: center;
@@ -167,7 +164,7 @@ font-size: calc(0.3rem + 0.9vw);
   justify-self: center;
   overflow: hidden;
   width: calc(10em + 40%);
-  position:relative;
+  position: relative;
   z-index: 1;
 }
 
@@ -180,7 +177,6 @@ font-size: calc(0.3rem + 0.9vw);
   width: 8.3vw;
 }
 
-
 .top-box {
   background-image: url(../images/bg-pattern-card.svg);
   background-size: 100%;
@@ -190,10 +186,9 @@ font-size: calc(0.3rem + 0.9vw);
   width: 100%;
 }
 
-
 @media only screen and (max-device-width: 425px) {
   body {
-    overflow:hidden;
+    overflow: hidden;
   }
 
   .boldName {
@@ -202,21 +197,15 @@ font-size: calc(0.3rem + 0.9vw);
     text-shadow: 0 0 black;
   }
 
+  .Followers, .likes, .photos {
+    font-weight: lighter;
+    font-size: calc(0.4rem + 1.2vw);
+    letter-spacing: 0.6px;
+  }
+
   .location {
     margin-top: -12px;
-  font-size: calc(81% + 0.5vw);
-  }
-
-  .profile-container {
-    height: 100vw;
-    margin:0;
-    padding: 0;
-    width: calc(149% + 3rem);
-  }
-
-  .top-box {
-    height: 37.35vw;
-    min-height: ;
+    font-size: calc(81% + 0.5vw);
   }
 
   .middle-box {
@@ -226,25 +215,29 @@ font-size: calc(0.3rem + 0.9vw);
 
   .pattern-top {
     grid-column: 3 / 5;
-        grid-row: credit / profile 3;
-        margin: 6% 0 auto 4%;
-        max-height: 129vh;
-        max-width: 130vw;
-        position: relative;
-        transform: translate(-116%, -92%);
-        z-index: 0 ;
+    grid-row: credit / profile 3;
+    margin: 6% 0 auto 4%;
+    max-height: 129vh;
+    max-width: 130vw;
+    position: relative;
+    transform: translate(-116%, -92%);
+    z-index: 0;
   }
 
-.pro-vic {
-  height: 24vw;
-  transform: translate(0px, -14.6vw);
-  width: 25vw;
-}
+  .profile-container {
+    height: 100vw;
+    margin: 0;
+    padding: 0;
+    width: calc(149% + 3rem);
+  }
 
-.Followers , .likes , .photos {
-  font-weight: lighter;
-  font-size: calc(0.4rem + 1.2vw);
-  letter-spacing: 0.6px;
-}
+  .pro-vic {
+    height: 24vw;
+    transform: translate(0px, -14.6vw);
+    width: 25vw;
+  }
 
+  .top-box {
+    height: 37.35vw;
+  }
 }
