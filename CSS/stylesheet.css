@@ -19,7 +19,6 @@ body {
 .attribution {
   align-self: end;
   color: hsla(240, 100%, 24%, 0.5);
-  background-color: blanchedalmond;
   font-family: 'Pacifico' , cursive;
   font-size: calc(0.5rem + 0.9vw);
   grid-area: 2 / 1 / 2 / 5;
