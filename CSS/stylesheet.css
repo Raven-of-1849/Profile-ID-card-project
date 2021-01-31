@@ -23,6 +23,7 @@ body {
   font-size: calc(0.5rem + 0.9vw);
   grid-area: 2 / 1 / 2 / 5;
   justify-self: end;
+  margin-right: 3%;
 }
 
 .attribution a {
