@@ -61,7 +61,9 @@ body {
   color: hsl(0, 0%, 59%);
   grid-area: Follow;
   justify-self: center;
-  font-size: calc(0.3rem + 0.9vw);
+  font-size: calc(0.3rem + 0.5vw);
+  letter-spacing: 1px;
+  text-shadow: 0 0 darkgrey;
 }
 
 .grey-color {
@@ -75,7 +77,9 @@ body {
   color: hsl(0, 0%, 59%);
   grid-area: Like;
   justify-self: center;
-  font-size: calc(0.3rem + 0.9vw);
+  font-size: calc(0.3rem + 0.5vw);
+  letter-spacing: 1px;
+  text-shadow: 0 0 darkgrey;
 }
 
 .location {
@@ -88,7 +92,7 @@ body {
   align-content: center;
   background-color: #FFF;
   display: grid;
-  font-size: calc(0.9rem + 0.2vw);
+  font-size: calc(0.76rem + 0.2vw);
   grid-area: middle;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.1fr 0.1fr 0.1fr;
@@ -131,7 +135,9 @@ body {
   color: hsl(0, 0%, 59%);
   grid-area: Photo;
   justify-self: center;
-  font-size: calc(0.3rem + 0.9vw);
+  font-size: calc(0.3rem + 0.5vw);
+  letter-spacing: 1px;
+  text-shadow: 0 0 darkgrey;
 }
 
 .profileBody {
@@ -151,12 +157,13 @@ body {
 .profile-container {
   align-self: center;
   border-radius: 3%;
+    box-shadow: 0px 11px 42px -1px rgba(0,0,0,0.29);
   grid-area: profile;
   /*height: 35vw; not very reponsive when zooming in on computer*/
-  height: calc(1rem + 26vw);
+  height: calc(1.2rem + 32vw);
   justify-self: center;
   overflow: hidden;
-  width: calc(7em + 36%);
+  width: calc(9em + 38%);
   position: relative;
   z-index: 1;
 }
@@ -174,7 +181,7 @@ body {
   background-image: url(../images/bg-pattern-card.svg);
   background-size: 100%;
   grid-area: top;
-  /*height: 13.35vw;*/
+  height: 12.35vw;
   min-height: 100%;
 }
 
