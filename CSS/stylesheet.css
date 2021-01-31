@@ -18,16 +18,12 @@ body {
 
 .attribution {
   align-self: end;
-  display: grid;
-  font-family: 'Pacifico', cursive;
+  color: hsla(240, 100%, 24%, 0.5);
+  background-color: blanchedalmond;
+  font-family: 'Pacifico' , cursive;
   font-size: calc(0.5rem + 0.9vw);
-  grid-area: credit;
-  justify-content: end;
-  color: hsl(240, 100%, 24%, 0.5);
-  margin-bottom: 0;
-  height: calc(14em + 28vh);
-  width: 146%;
-  transform: translate(-42vw, 24vw);
+  grid-area: 2 / 1 / 2 / 5;
+  justify-self: end;
 }
 
 .attribution a {
@@ -193,21 +189,10 @@ font-size: calc(0.3rem + 0.9vw);
   width: 100%;
 }
 
-@media only screen and (max-device-width: 1110px) and (min-device-width: 425px) {
-  .attribution {
-    transform: translate(-42vw, 27vw);
-  }
-}
 
 @media only screen and (max-device-width: 425px) {
   body {
     overflow:hidden;
-  }
-
-  .attribution {
-    height: calc(13em + 24vh);
-    transform: translate(-40vw, 51vw);
-
   }
 
   .boldName {
