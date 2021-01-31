@@ -153,10 +153,10 @@ body {
   border-radius: 3%;
   grid-area: profile;
   /*height: 35vw; not very reponsive when zooming in on computer*/
-  height: calc(1.2rem + 30vw);
+  height: calc(1.1rem + 29vw);
   justify-self: center;
   overflow: hidden;
-  width: calc(8em + 37%);
+  width: calc(7em + 36%);
   position: relative;
   z-index: 1;
 }
