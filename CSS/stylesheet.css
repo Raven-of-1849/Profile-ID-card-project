@@ -41,23 +41,18 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
   grid-template-areas: "Follow Like Photo";
-  color: black;
 }
 
 .container-box {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
   grid-template-rows: 3.2fr 0.1fr 2fr;
   grid-template-areas:
     "top top top top"
     "middle middle middle middle"
     "bottom bottom bottom bottom";
   height: 100%;
-  position: absolute;
-  width: 100%;
 }
 
 .Followers {
@@ -144,7 +139,6 @@ body {
   background-color: hsl(185, 75%, 39%);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
   grid-auto-rows: 50vh;
   grid-template-areas:
     "round-bg profile profile ."
@@ -183,7 +177,6 @@ body {
   grid-area: top;
   height: 13.35vw;
   min-height: 100%;
-  width: 100%;
 }
 
 @media only screen and (min-device-width: 930px) and  (min-device-height: 50px) and (max-device-height:490px) and (orientation : landscape) {
