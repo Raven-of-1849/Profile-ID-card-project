@@ -169,8 +169,9 @@ body {
 }
 
 .pro-vic {
+  background-color: #FFF;
   border-radius: 50%;
-  border: solid 5px #FFF;
+  border: solid 7px #FFF;
   grid-area: middle-p;
   height: 8.4vw;
   transform: translate(0px, -4.6vw);
@@ -179,7 +180,7 @@ body {
 
 .top-box {
   background-image: url(../images/bg-pattern-card.svg);
-  background-size: 100%;
+  background-size: cover;
   grid-area: top;
   height: 12.35vw;
   min-height: 100%;
@@ -190,6 +191,11 @@ body {
     width: 28vw;
   }
 }
+
+@media only screen and (min-width: 375px) {
+  .profile-container {
+    max-width: 1440px;
+  }
 
 @media only screen and (max-device-width: 425px) {
   body {
