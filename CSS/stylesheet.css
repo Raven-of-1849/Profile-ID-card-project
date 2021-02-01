@@ -192,10 +192,6 @@ body {
   }
 }
 
-@media only screen and (min-width: 375px) {
-  .profile-container {
-    max-width: 1440px;
-  }
 
 @media only screen and (max-device-width: 425px) {
   body {
@@ -208,26 +204,29 @@ body {
   }
 
   .boldName {
-    font-size: calc(98% + 0.7vw);
+    font-size: calc(98% + 1.4vw);
     letter-spacing: 0.8px;
+    line-height: 1.6;
     text-shadow: 0 0 black;
   }
 
   .Followers, .likes, .photos {
     font-weight: lighter;
-    font-size: calc(0.4rem + 1.2vw);
-    letter-spacing: 0.6px;
+    font-size: calc(0.4rem + 1vw);
+    justify-self: center;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    margin-top: 21%;
   }
 
   .location {
-    margin-top: -12px;
-    font-size: calc(81% + 0.5vw);
+    margin-top: -2px;
+    font-size: calc(81% + 0.7vw);
   }
 
   .middle-box {
     height: 39.2vw;
     line-height: 2.5;
-    background-color: aqua;
   }
 
   .pattern-top {
@@ -249,12 +248,18 @@ body {
   }
 
   .pro-vic {
-    height: 24vw;
+    border: solid 5px #FFF;
+    height: 25vw;
     transform: translate(0px, -14.6vw);
-    width: 25vw;
+    width: 26vw;
   }
 
   .top-box {
     height: 37.35vw;
   }
 }
+
+@media only screen and (min-width: 325px) {
+  .profile-container {
+    max-width: 1440px;
+  }
