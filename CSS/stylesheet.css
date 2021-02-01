@@ -227,6 +227,7 @@ body {
   .middle-box {
     height: 39.2vw;
     line-height: 2.5;
+    background-color: aqua;
   }
 
   .pattern-top {
